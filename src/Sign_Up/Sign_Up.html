@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SIGN UP CSS -->
+    <link rel="stylesheet" href="./Sign_Up.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- WEBSITE TITLE -->
+    <title>StayHealthy Inc.</title>
+</head>
+<body style="background-color: black;">
+    <!-- SIGNUP FORM -->
+    <div class="container">
+        <form class="form">
+            <div>
+                <a href="../Navbar/Navbar.html"><button type="button" class="btn-close" style="margin-left: 300px;"></button></a>
+            </div>
+            <div class="signup-title" >
+                <h1>Sign Up</h1>
+            </div>
+            <div class="login-text">
+                Already a member? <span><a href="../Login/Login.html" style="color: #358AD8;"> Login</a></span>
+            </div>
+            <div class="form-group">
+                <label class="form-label" style="margin-right: 317px;"><b>Role</b></label><br />
+                <select class="form-select">
+                    <option selected>Select role</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="pacient">Pacient</option>
+                </select>
+            </div> <br/>
+            <div class="form-group">
+                <label class="form-label" style="margin-right: 310px;"><b>Name</b></label><br />
+                <input class="form-control" type="name" id="name" placeholder="Enter your name" required />
+            </div> <br/>
+            <div class="form-group">
+                <label class="form-label" style="margin-right: 185px;"><b>Phone Number</b></label><br />
+                <input class="form-control" type="tel" id="phone" placeholder="Enter your phone number" required />
+            </div> <br/>
+            <div class="form-group">
+                <label class="form-label" style="margin-right: 310px;"><b>Email</b></label><br />
+                <input class="form-control" type="email" id="email" placeholder="Enter your email" required />
+            </div> <br/>
+            <div class="form-group">
+                <label class="form-label" style="margin-right: 280px;"><b>Password</b></label><br />
+                <input class="form-control" type="password" id="password" placeholder="Enter your password" required />
+            </div> <br/>
+            <div class="btn-group">
+                <button type="button" class="btnSubmit" id="submit">Submit</button> <br />
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btnReset" id="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

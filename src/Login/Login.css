@@ -1,0 +1,41 @@
+/* ##################################   STYLING THE LOGIN FORM  ################################## */
+
+.form {
+    background-color: #ffffff;
+    border-radius: 40px;
+    width: 500px;
+    padding: 100px;
+    margin: 100px auto;
+    text-align: center;
+    color: #003C74;
+}
+
+.login-title {
+    color: #003C74;
+    margin-bottom: 20px;
+}
+
+.signup-text {
+    margin-bottom: 40px;
+    color: #003C74;
+}
+
+.btnSubmit {
+    width: 248px;
+    height: 50px;
+    background-color: #003C74;
+    color: #ffffff;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: #ffffff;
+}
+
+.btnReset {
+    width: 248px;
+    height: 50px;
+    background-color: #D40000;
+    color: #ffffff;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: #ffffff;
+}

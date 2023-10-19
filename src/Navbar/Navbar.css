@@ -1,0 +1,42 @@
+/* ##################################   STYLING THE NAVBAR  ################################## */
+
+/* NAVBAR TITLE DESIGN */
+
+.navbar-brand b {
+    color: #003C74;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+/* NAVBAR ITEMS DESIGN */
+
+.nav_item {
+    margin-right: 100px;
+    margin-top: 0px;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* SIGNUP AND LOGIN BUTTON EFFECTS AND DESIGN */
+
+.nav_btn {
+    transition: 0.3s;
+    margin-right: 50px;
+}
+
+.btn1 {
+    border: 3px solid #006DD1;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    color: #ffffff;
+    background-color: #006DD1;
+}
