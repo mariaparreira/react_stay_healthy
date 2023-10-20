@@ -18,25 +18,26 @@
 .hero-section .flex-hero h1 {
     font-size: 65px;
     font-weight: 900;
+    color: #003C74;
 }
 .text-gradient {
-    background: linear-gradient(45deg,#2190FF 2.34%,#b673f8 100.78%);
+    background: linear-gradient(45deg,#006DD1 2.34%,#BA76FF 100.78%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero-section h4 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 300;
     text-align: center;
-    padding: 12px 14rem;
+    padding: 25px 27rem;
     color:#969BA5;
 }
 
 .hero-section .button {
     padding: 0.7rem 2rem;
     border-radius: 25px;
-    background-color: #2190FF;
+    background-color: #006DD1;
     color: #fff;
     border: 1px solid transparent;
     width: 15%;
@@ -92,12 +93,13 @@ button {
 @media screen and (max-width:980px) {
     .hero-section h1 {
         text-align: center;
+        color: #003C74;
     }
     .hero-section {
         padding-top: 12rem;
     }
     .hero-section h4 {
-        font-size: 21px;
+        font-size: 23px;
         text-align: center;
         padding: 0px 4rem;
     }
@@ -114,13 +116,14 @@ button {
 @media screen and (max-width:400px) {
     .hero-section h1 {
         font-size: 35px;
+        color: #003C74;
     }
 
     .hero-section {
         padding-top: 10rem;
     }
     .hero-section h4 {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0px 2rem;
     }
 
@@ -152,30 +155,53 @@ li {
 }
 
 .blue {
-    background-color: #2937a392;
+    background-color: #006DD1;
     position: absolute;
     top:0;
     left: 0;
-    right: 55%;
-    bottom: 25%;
+    right: 25%;
+    bottom: -20%;
     margin: auto;
-    height: 150px;
+    height: 100px;
     width: 200px;
     animation: blobani 8s infinite ease;
 }
 .blue1 {
-    background-color: #2937a392;
+    background-color: #BA76FF;
     position: absolute;
     top:0;
     left: 0;
-    right: -55%;
-    bottom: -25%;
+    right: 5%;
+    bottom: -55%;
     margin: auto;
-    height: 150px;
+    height: 100px;
     width: 200px;
     animation: blobani 8s infinite ease;
 }
-  
+.blue2 {
+    background-color: #006DD1;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: -15%;
+    bottom: -20%;
+    margin: auto;
+    height: 100px;
+    width: 200px;
+    animation: blobani 8s infinite ease;
+}
+.blue3 {
+    background-color: #BA76FF;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: -35%;
+    bottom: -55%;
+    margin: auto;
+    height: 100px;
+    width: 200px;
+    animation: blobani 8s infinite ease;
+}
   
   @keyframes blobani {
     0% {top: 0; left: 0; transform: scale(1);}
