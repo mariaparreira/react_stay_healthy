@@ -12,6 +12,8 @@
 /* NAVBAR ITEMS DESIGN */
 
 .nav_item {
+    margin-right: 100px;
+    margin-top: 10px;
     color: #000000;
     transition: 0.3s;
     font-size: 20px;
