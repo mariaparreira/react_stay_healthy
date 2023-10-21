@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './Login.css';
 
-import CloseIcon from '../images/Close.png';
-
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -16,11 +14,11 @@ const Login = () => {
                     Not a member? <span><Link to="/signup" className="signup-nav"> Sign up</Link></span>
                 </div>
                 <div className="form-group">
-                    <label for="email" className="form-label"><b>Email</b></label><br />
+                    <label htmlFor="email" className="form-label"><b>Email</b></label><br />
                     <input className="form-control" type="email" name="email" id="email" placeholder="Enter your email" aria-describedby="helpId" required />
                 </div> <br/>
                 <div className="form-group">
-                    <label for="password" className="form-label"><b>Password</b></label><br />
+                    <label htmlFor="password" className="form-label"><b>Password</b></label><br />
                     <input className="form-control" type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="helpId" required />
                 </div> <br/>
                 <div className="btn-group">

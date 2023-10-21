@@ -6,6 +6,7 @@ import StayHealthyLogo from '../images/StayHealthyLogo.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
     return(
         <nav className="navbar navbar-expand-lg bg-white">
             <div className="container-fluid">
