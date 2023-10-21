@@ -1,23 +1,33 @@
 /* ##################################   STYLING THE LOGIN FORM  ################################## */
 
 .form {
-    background-color: #ffffff;
+    background-color: rgba(53, 138, 216, 0.3);
     border-radius: 40px;
     width: 500px;
     padding: 100px;
     margin: 100px auto;
-    text-align: center;
     color: #003C74;
 }
 
 .login-title {
     color: #003C74;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .signup-text {
     margin-bottom: 40px;
     color: #003C74;
+    text-align: center;
+}
+
+.signup-nav {
+    color: #358AD8;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
 }
 
 .btnSubmit {
@@ -42,4 +52,5 @@
 
 .forgot-pass {
     margin-top: 20px;
+    text-align: center;
 }

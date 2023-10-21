@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import './Sign_Up.css'
+
+import CloseIcon from '../images/Close.png';
+
 import { Link, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
 
 const Sign_Up = () => {
+    const [role, setRole] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -23,6 +28,7 @@ const Sign_Up = () => {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
+                role: role,
                 name: name,
                 email: email,
                 password: password,
@@ -56,38 +62,35 @@ const Sign_Up = () => {
     return (
         <div className="container">
             <form className="form" method="POST" onSubmit={register}>
-                <div>
-                    <a to="../Navbar/Navbar"><button type="button" className="btn-close" style="margin-left: 300px;"></button></a>
-                </div>
                 <div className="signup-title" >
                     <h1>Sign Up</h1>
                 </div>
                 <div className="login-text">
-                    Already a member? <span><a to="../Login/Login" style="color: #358AD8;"> Login</a></span>
+                    Already a member? <span><Link to="/login" className="login-nav"> Login</Link></span>
                 </div>
                 <div className="form-group">
-                    <label className="form-label" style="margin-right: 317px;"><b>Role</b></label><br />
-                    <select className="form-select">
+                    <label className="form-label" ><b>Role</b></label><br />
+                    <select className="form-select" required>
                         <option selected>Select role</option>
                         <option value="doctor">Doctor</option>
                         <option value="pacient">Pacient</option>
                     </select>
                 </div> <br/>
                 <div clasclassNames="form-group">
-                    <label htmlFor="name" className="form-label" style="margin-right: 310px;"><b>Name</b></label><br />
+                    <label htmlFor="name" className="form-label" ><b>Name</b></label><br />
                     <input value={name} onChange={(e) => setName(e.target.value)} className="form-control" type="text" name="name" id="name" placeholder="Enter your name" aria-describedby="helpId" required />
                 </div> <br/>
                 <div className="form-group">
-                    <label htmlFor="phone" className="form-label" style="margin-right: 185px;"><b>Phone Number</b></label><br />
+                    <label htmlFor="phone" className="form-label" ><b>Phone Number</b></label><br />
                     <input value={phone} onChange={(e) => setPhone(e.target.value)} className="form-control" type="tel" name="phone" id="phone" placeholder="Enter your phone number" aria-describedby="helpId" required />
                 </div> <br/>
                 <div className="form-group">
-                    <label htmlFor="email" className="form-label" style="margin-right: 310px;"><b>Email</b></label><br />
+                    <label htmlFor="email" className="form-label" ><b>Email</b></label><br />
                     <input value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" type="email" name="email" id="email" placeholder="Enter your email" aria-describedby="helpId" required />
                     {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
                 </div> <br/>
                 <div className="form-group">
-                    <label htmlFor="password" className="form-label" style="margin-right: 280px;"><b>Password</b></label><br />
+                    <label htmlFor="password" className="form-label" ><b>Password</b></label><br />
                     <input value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="helpId" required />
                 </div> <br/>
                 <div className="btn-group">

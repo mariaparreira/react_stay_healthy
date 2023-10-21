@@ -159,8 +159,8 @@ li {
     position: absolute;
     top:0;
     left: 0;
-    right: 25%;
-    bottom: 20%;
+    right: 20%;
+    bottom: 30%;
     margin: auto;
     height: 100px;
     width: 200px;
@@ -171,8 +171,8 @@ li {
     position: absolute;
     top:0;
     left: 0;
-    right: 5%;
-    bottom: -15%;
+    right: 7%;
+    bottom: 5%;
     margin: auto;
     height: 100px;
     width: 200px;
@@ -183,8 +183,8 @@ li {
     position: absolute;
     top:0;
     left: 0;
-    right: -15%;
-    bottom: 20%;
+    right: -10%;
+    bottom: 30%;
     margin: auto;
     height: 100px;
     width: 200px;
@@ -195,8 +195,8 @@ li {
     position: absolute;
     top:0;
     left: 0;
-    right: -35%;
-    bottom: -15%;
+    right: -23%;
+    bottom: 5%;
     margin: auto;
     height: 100px;
     width: 200px;
