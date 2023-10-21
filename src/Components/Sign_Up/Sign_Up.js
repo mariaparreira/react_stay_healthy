@@ -15,31 +15,31 @@ const Sign_Up = () => {
                     Already a member? <span><Link to="/login" className="login-nav"> Login</Link></span>
                 </div>
                 <div className="form-group">
-                    <label className="form-label" ><b>Role</b></label><br />
+                    <label className="form-label" ><b>Role</b></label>
                     <select className="form-select" required>
                         <option selected>Select role</option>
                         <option value="doctor">Doctor</option>
                         <option value="pacient">Pacient</option>
                     </select>
-                </div> <br/>
+                </div> 
                 <div clasclassNames="form-group">
-                    <label htmlFor="name" className="form-label" ><b>Name</b></label><br />
+                    <label htmlFor="name" className="form-label" ><b>Name</b></label>
                     <input className="form-control" type="text" name="name" id="name" placeholder="Enter your name" aria-describedby="helpId" required />
-                </div> <br/>
+                </div> <br />
                 <div className="form-group">
-                    <label htmlFor="phone" className="form-label" ><b>Phone Number</b></label><br />
+                    <label htmlFor="phone" className="form-label" ><b>Phone Number</b></label>
                     <input className="form-control" type="tel" name="phone" id="phone" placeholder="Enter your phone number" aria-describedby="helpId" required />
-                </div> <br/>
+                </div>
                 <div className="form-group">
-                    <label htmlFor="email" className="form-label" ><b>Email</b></label><br />
+                    <label htmlFor="email" className="form-label" ><b>Email</b></label>
                     <input className="form-control" type="email" name="email" id="email" placeholder="Enter your email" aria-describedby="helpId" required />
-                </div> <br/>
+                </div>
                 <div className="form-group">
-                    <label htmlFor="password" className="form-label" ><b>Password</b></label><br />
+                    <label htmlFor="password" className="form-label" ><b>Password</b></label>
                     <input className="form-control" type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="helpId" required />
-                </div> <br/>
+                </div>
                 <div className="btn-group">
-                    <button type="button" className="btnSubmit" id="submit">Submit</button> <br />
+                    <button type="button" className="btnSubmit" id="submit">Submit</button>
                 </div>
                 <div className="btn-group">
                     <button type="button" className="btnReset" id="reset">Reset</button>
