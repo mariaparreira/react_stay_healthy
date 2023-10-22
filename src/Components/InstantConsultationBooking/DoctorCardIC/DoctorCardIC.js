@@ -73,7 +73,7 @@ const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => 
           onClose={() => setShowModal(false)}
         >
           {(close) => (
-            <div className="doctorbg" style={{ height: '100vh', overflow: 'scroll' }}>
+            <div className="doctorbg" style={{ height: '100vh', overflow: 'scroll', marginTop: '100px' }}>
               <div>
                 <div className="doctor-card-profile-image-container">
                 <img src={Doc1Profile} style={{width: '123px', height: '92px'}} />
@@ -88,12 +88,12 @@ const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => 
 
               {appointments.length > 0 ? (
                 <>
-                  <h3 style={{ textAlign: 'center' }}>Appointment Booked!</h3>
+                  <h3 style={{ textAlign: 'center', marginTop: '30px' }}>Appointment Booked!</h3>
                   {appointments.map((appointment) => (
-                    <div className="bookedInfo" key={appointment.id}>
+                    <div className="bookedInfo" key={appointment.id} style={{ textAlign: 'center', marginTop: '30px' }}>
                       <p>Name: {appointment.name}</p>
                       <p>Phone Number: {appointment.phoneNumber}</p>
-                      <button onClick={() => handleCancel(appointment.id)}>Cancel Appointment</button>
+                      <button className="btnCancel" onClick={() => handleCancel(appointment.id)}>Cancel Appointment</button>
                     </div>
                   ))}
                 </>

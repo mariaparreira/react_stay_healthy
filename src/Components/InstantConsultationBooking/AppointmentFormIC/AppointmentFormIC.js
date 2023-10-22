@@ -19,7 +19,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
     };
   
     return (
-      <form onSubmit={handleFormSubmit} className="appointment-form">
+      <form onSubmit={handleFormSubmit} className="appointment-form" style={{marginTop: '50px'}}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input

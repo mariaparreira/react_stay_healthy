@@ -12,7 +12,7 @@ const initSpeciality = ['Dentist', 'Gynecologist/obstetrician', 'General Physici
 const FindDoctorSearch = () => {
     const [doctorResultHidden, setDoctorResultHidden] = useState(true);
     const [searchDoctor, setSearchDoctor] = useState('');
-    const [specialities, setSpecialities] = useState(initSpeciality);
+    const [specialities] = useState(initSpeciality);
     const navigate = useNavigate();
     const handleDoctorSelect = (speciality) => {
         setSearchDoctor(speciality);
