@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
+
 import 'reactjs-popup/dist/index.css';
 import './DoctorCardIC.css';
+
+import Doc1Profile from '../../images/Doctor1.png';
+
 import AppointmentFormIC from '../AppointmentFormIC/AppointmentFormIC'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -33,7 +37,7 @@ const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => 
     <div className="doctor-card-container">
       <div className="doctor-card-details-container">
         <div className="doctor-card-profile-image-container">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"> <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> </svg>
+        <img src={Doc1Profile} style={{width: '123px', height: '92px'}}/>
         </div>
         <div className="doctor-card-details">
           <div className="doctor-card-detail-name">{name}</div>
@@ -72,7 +76,7 @@ const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => 
             <div className="doctorbg" style={{ height: '100vh', overflow: 'scroll' }}>
               <div>
                 <div className="doctor-card-profile-image-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"> <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> </svg>
+                <img src={Doc1Profile} style={{width: '123px', height: '92px'}} />
                 </div>
                 <div className="doctor-card-details">
                   <div className="doctor-card-detail-name">{name}</div>
