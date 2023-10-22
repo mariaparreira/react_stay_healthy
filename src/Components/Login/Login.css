@@ -40,6 +40,11 @@
     border: #ffffff;
 }
 
+.btnSubmit:hover {
+    background-color: #005db3;
+    transition: 0.3s;
+}
+
 .btnReset {
     width: 248px;
     height: 50px;
@@ -48,6 +53,11 @@
     margin-top: 10px;
     border-radius: 30px;
     border: #ffffff;
+}
+
+.btnReset:hover {
+    background-color: #ff0000;
+    transition: 0.3s;
 }
 
 .forgot-pass {

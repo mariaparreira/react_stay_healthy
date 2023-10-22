@@ -1,0 +1,97 @@
+/* ##################################   STYLING APPOINTMENTS PAGE  ################################## */
+
+.findDoc {
+    overflow: hidden;
+}
+
+.findDoc .mainimg {
+    width: 312px;
+    height: 312px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.title_size {
+    color: #003C74;
+    font-weight: bold;
+}
+
+.search_container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc_search {
+    display: flex;
+    width: 500px;
+    margin-top: 50px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.doc_search_input {
+    width: 500%;
+    padding: 6px 20px 5px 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 3px solid #003C74;
+}
+
+.findiconimg {
+    width: 500px;
+    left: 0;
+    height: 60px;
+    border: 3px solid #003C74;
+    z-index: -99;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.doc_search_results {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 485px;
+    margin-top: 2px;
+    border: 3px solid #003C74;
+}
+
+.doc_search_item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1f1ff;
+    padding: 10px 12px;
+    column-gap: 14px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.doc_search_item:hover {
+    background-color: #e1f1ff;
+}
+
+.doc_search_item>span:nth-of-type(2) {
+    font-size: 18px;
+    color: #003C74;
+}
+
+.doc_search_item>span:nth-of-type(3) {
+    font-size: 12px;
+    flex-grow: 1;
+    color: #748392;
+    text-align: right;
+    text-transform: uppercase;
+    justify-self: flex-end;
+}

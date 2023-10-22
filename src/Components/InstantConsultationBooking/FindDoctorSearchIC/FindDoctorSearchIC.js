@@ -4,12 +4,12 @@ import './FindDoctorSearchIC.css';
 
 import DocAppointmentLogo from '../../images/doc_appointment_logo.png';
 import SearchIcon from '../../images/Search.png';
-import Doc1Profile from '../../images/Doctor1.png';
+import Doc1Profile from '../../images/Doctor.png';
 
 import { useNavigate, Navigate } from 'react-router-dom';
 
 const initSpeciality = [
-    'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist', 'Ear-nose-throat (ent) Specialist', 'Homeopath', 'Ayurveda'
+    'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist', 'Ear-nose-throat (ent) Specialist', 'Homeopath', 'Ayurveda', 'Endocrinologist'
 ]
 
 const FindDoctorSearchIC = () => {
@@ -38,7 +38,7 @@ const FindDoctorSearchIC = () => {
                         <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                             {
                                 specialities.map(speciality => <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>
-                                    <span><img src={Doc1Profile} alt="" style={{height:"30px", width:"40px"}} /></span>
+                                    <span><img src={Doc1Profile} alt="" style={{height:"40px", width:"55px"}} /></span>
                                     <span>{speciality}</span>
                                     <span>SPECIALITY</span>
                                 </div>)

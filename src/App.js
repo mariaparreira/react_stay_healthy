@@ -18,7 +18,7 @@ function App() {
                 <Route path="/" element={<Landing_Page />} />
                 <Route path="/signup" element={<Sign_Up />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/instant-consultation" element={<InstantConsultation />} />
+                <Route path="/appointments" element={<InstantConsultation />} />
               </Routes>
             
         </BrowserRouter>

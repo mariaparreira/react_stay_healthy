@@ -4,7 +4,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './DoctorCardIC.css';
 
-import Doc1Profile from '../../images/Doctor1.png';
+import Doc1Profile from '../../images/Doctor.png';
 
 import AppointmentFormIC from '../AppointmentFormIC/AppointmentFormIC'
 import { v4 as uuidv4 } from 'uuid';
