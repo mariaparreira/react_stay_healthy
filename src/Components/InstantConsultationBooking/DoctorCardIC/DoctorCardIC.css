@@ -68,7 +68,6 @@
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
   }
   
@@ -159,6 +158,10 @@
 
 .form-group {
   margin-bottom: 20px;
+}
+
+.form-group input {
+  border-radius: 30px;
 }
 
 label {

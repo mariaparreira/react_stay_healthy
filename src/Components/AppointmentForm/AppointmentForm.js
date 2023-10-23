@@ -38,7 +38,7 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
                 <label htmlFor="timeBook">Book Time Slot:</label>
                 <input type="time" id="timeBook" value={timeBook} onChange={(e) => setTimeBook(e.target.value)} required />
             </div>
-            <button type="submit">Book Now</button>
+            <button className="book-now-btn" type="submit">Book Now</button>
         </form>
     );
 };
