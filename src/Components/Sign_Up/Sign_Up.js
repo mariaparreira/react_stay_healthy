@@ -67,7 +67,7 @@ const Sign_Up = () => {
                     <select value={role} onChange={(e) => setRole(e.target.value)} className="form-select" required>
                         <option selected>Select role</option>
                         <option value="doctor">Doctor</option>
-                        <option value="pacient">Pacient</option>
+                        <option value="pacient">Patient</option>
                     </select>
                 </div> 
                 <div clasclassNames="form-group">
@@ -88,10 +88,10 @@ const Sign_Up = () => {
                     <input value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="helpId" required />
                 </div>
                 <div className="btn-group">
-                    <button type="button" className="btnSubmit" id="submit">Submit</button>
+                    <button type="submit" className="btnSubmit" id="submit">Submit</button>
                 </div>
                 <div className="btn-group">
-                    <button type="button" className="btnReset" id="reset">Reset</button>
+                    <button type="submit" className="btnReset" id="reset">Reset</button>
                 </div>
             </form>
         </div>

@@ -63,10 +63,10 @@ const Login = () => {
                     <input value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="helpId" required />
                 </div>
                 <div className="btn-group">
-                    <button type="button" className="btnSubmit" id="submit">Submit</button>
+                    <button type="submit" className="btnSubmit" id="submit">Submit</button>
                 </div>
                 <div className="btn-group">
-                    <button type="button" className="btnReset" id="reset">Reset</button>
+                    <button type="submit" className="btnReset" id="reset">Reset</button>
                 </div>
                 <div className="forgot-pass">
                     Forgot Password?
