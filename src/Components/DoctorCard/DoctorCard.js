@@ -5,7 +5,7 @@ import 'reactjs-popup/dist/index.css';
 import './DoctorCard.css';
 
 import DocProfile from '../images/Doctor.png';
-import AppointmentFormIC from '../InstantConsultationBooking/AppointmentFormIC/AppointmentFormIC';
+import AppointmentForm from '../AppointmentForm/AppointmentForm';
 import { v4 as uuidv4 } from 'uuid';
 
 const DoctorCard = ({ name, speciality, experience, ratings }) => {
@@ -80,14 +80,16 @@ const DoctorCard = ({ name, speciality, experience, ratings }) => {
                                     <h3 style={{ textAlign: 'center', marginTop: '30px' }}>Appointment Booked!</h3>
                                     {appointments.map((appointment) => (
                                         <div className="bookedInfo" key={appointment.id} style={{ textAlign: 'center', marginTop: '30px' }}>
-                                            <p>Name: {appointment.name}</p>
-                                            <p>Phone Number: {appointment.phoneNumber}</p>
+                                            <p><b>Name:</b> {appointment.name}</p>
+                                            <p><b>Phone Number:</b> {appointment.phoneNumber}</p>
+                                            <p><b>Date of Appointment:</b> {appointment.dateAppointment}</p>
+                                            <p><b>Time of Appointment:</b> {appointment.timeBook}</p>
                                             <button className="btnCancel" onClick={() => handleCancel(appointment.id)}>Cancel Appointment</button>
                                         </div>
                                     ))}
                                 </>
                             ) : (
-                                <AppointmentFormIC doctorName={name} doctorSpeciality={speciality} onSubmit={handleFormSubmit} />
+                                <AppointmentForm doctorName={name} doctorSpeciality={speciality} onSubmit={handleFormSubmit} />
                             )}
                         </div>
                     )}
