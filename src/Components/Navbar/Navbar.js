@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { BsBell } from 'react-icons/bs'
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css'
 import StayHealthyLogo from '../images/StayHealthyLogo.png';
@@ -62,8 +63,14 @@ const Navbar = () => {
                         <li className="nav_item">
                             <Link className="nav-link" to="/reviews">Reviews</Link>
                         </li>
+                        <li className="nav_item">
+                            <Link to="/notifications"><BsBell /></Link>
+                        </li>
                         {isLoggedIn ? (
                             <>
+                                <li className="nav_item">
+                                    Welcome, (user)
+                                </li>
                                 <li className="nav_btn">
                                     <button className="btn1" onClick={handleLogout}>Logout</button>
                                 </li>
