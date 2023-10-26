@@ -1,3 +1,17 @@
 .appointment-card__message {
     margin-top: 24px;
 }
+
+.btn {
+    border: 3px solid #006DD1;
+    border-radius: 30px;
+    color: #000000;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #006DD1;
+}

@@ -58,7 +58,7 @@ const Notifications = ({ children }) => {
                     <h3 style={{ textAlign: 'center' }}>You're not logged in. Please login first</h3>
                 </div>
                 <div className="form-group">
-                    <Link to="/login"><button type="button" className="btn1">Login</button></Link>
+                    <Link to="/login"><button type="button" className="btn">Login</button></Link>
                 </div>
             </form>
         )}
