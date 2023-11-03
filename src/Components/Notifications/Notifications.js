@@ -29,24 +29,55 @@ const Notifications = ({ children }) => {
     }
   }, []);
   return (
-    <div className="container">
-        <h1 style={{ color: '#003C74' }}>Notifications</h1>
-        {/*<Navbar ></Navbar>*/}
+    <div className="notifspage-container">
+      <div>
+        <center>
+          <div className="notifsLayout">
+            <h1 className="notifs-title">Notifications</h1>
+          </div>
+          <form className="notifs-form">
+                <div className="appointment-card">
+                    <div className="appointment-card__content">
+                        <h3 className="appointment-card__title">Appointment Details</h3>
+                        <hr />
+                        <p className="appointment-card_notif">
+                            <strong>Doctor Name:</strong> Dr. Jiao Yang
+                            < br/>
+                            <strong>Doctor Speciality:</strong> Dentist
+                            < br/>
+                            <strong>Patient Name:</strong> Mia Smith
+                            < br/>
+                            <strong>Phone Number:</strong> 1234567890
+                            < br/>
+                            <strong>Time:</strong> 10:30
+                            < br/>
+                            <strong>Date:</strong> 2023-10-30
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </center>
+      </div>
+        {/*<Navbar ></Navbar>
         {children}
         {isLoggedIn ? (
             <>
-            <form className="form">
+            <form className="notifs-form">
                 <div className="appointment-card">
                     <div className="appointment-card__content">
                         <h3 className="appointment-card__title">Appointment Details</h3>
                         <p className="appointment-card__message">
-                            <strong>Doctor:</strong> {doctorData?.name}
+                            <strong>Doctor Name:</strong> Dr. Jiao Yang
                             < br/>
-                            <strong>Patient:</strong>
+                            <strong>Doctor Speciality:</strong> Dentist
                             < br/>
-                            <strong>Time:</strong>
+                            <strong>Patient Name:</strong> Mia Smith
                             < br/>
-                            <strong>Date:</strong>
+                            <strong>Phone Number:</strong> 1234567890
+                            < br/>
+                            <strong>Time:</strong> 10:30
+                            < br/>
+                            <strong>Date:</strong> 2023-10-30
                         </p>
                     </div>
                 </div>
@@ -61,7 +92,7 @@ const Notifications = ({ children }) => {
                     <Link to="/login"><button type="button" className="btn">Login</button></Link>
                 </div>
             </form>
-        )}
+        )}*/}
     </div>
   );
 };

@@ -6,8 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css'
 import StayHealthyLogo from '../images/StayHealthyLogo.png';
 
-import Login from '../Login/Login';
-
 const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUsername] = useState("");
@@ -65,16 +63,21 @@ const Navbar = () => {
                         <li className="nav_item">
                             <Link className="nav-link" to="/reviews">Reviews</Link>
                         </li>
-                        <li className="nav_item">
-                            <Link to="/notifications"><BsBell /></Link>
-                        </li>
                         {isLoggedIn ? (
                             <>
+                                <li className="nav_btn">
+                                    <div className="dropdown">
+                                        <button className="btn1" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">Welcome, (user)</button>
+                                        <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
+                                            <li><a className="dropdown-item" href="#">Your Profile</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li className="nav_item">
-                                    Welcome, (user)
+                                    <Link to="/notifications"><BsBell /></Link>
                                 </li>
                                 <li className="nav_btn">
-                                    Welcome <button className="btn1" onClick={handleLogout}>Logout</button>
+                                    <button className="btn1" onClick={handleLogout}>Logout</button>
                                 </li>
                             </>
                         ) : (

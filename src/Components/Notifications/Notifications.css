@@ -1,5 +1,33 @@
-.appointment-card__message {
+/* ##################################   STYLING NOTIFICATIONS PAGE  ################################## */
+
+.notifspage-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top:10%;
+    padding: 0 20px;
+    position: static;
+    width: 100%;
+}
+
+.notifsLayout {
+    display: flex;
+    justify-content: left;
+}
+
+.notifs-title {
+    color: #003C74;
+    font-weight: bold;
+}
+
+.notifs-form {
+    color: #003C74;
+    display: flex;
+    justify-content: center;
+}
+
+.appointment-card_notif {
     margin-top: 24px;
+    font-size: 18px;
 }
 
 .btn {

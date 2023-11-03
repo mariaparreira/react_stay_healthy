@@ -1,0 +1,68 @@
+/* ##################################   STYLING REPORT FORM PAGE  ################################## */
+
+.report-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top:10%;
+    padding: 0 20px;
+    position: static;
+    width: 100%;
+}
+
+.reportForm {
+    display: flex;
+    justify-content: left;
+}
+
+.report-title {
+    color: #003C74;
+    font-weight: bold;
+}
+
+.reportForm-sections {
+    margin-top: 30px;
+    width: 1300px;
+    padding: 20px;
+    color: #003C74;
+    border: 3px solid #003C74;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.reportForm-layout {
+    width: 1300px;
+    padding: 40px;
+    color: #003C74;
+    border: 3px solid #003C74;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    font-size: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.viewReport {
+    display: flex;
+    justify-content: center;
+}
+
+.reports {
+    border-radius: 30px;
+    width: 600px;
+    padding: 40px;
+    color: #003C74;
+    border: 3px solid #003C74;
+}
